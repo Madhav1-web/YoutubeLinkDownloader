@@ -46,7 +46,7 @@ def download_videos(links: list[str]):
 
 
 if __name__ == "__main__":
-    # Accept URLs as CLI args or fall back to the hardcoded list above
+    # Accept URLs as arguments frmo the terminal itself, or you can just edit in the code, provision for both is there
     links = sys.argv[1:] if len(sys.argv) > 1 else YOUTUBE_LINKS
 
     if not links:
